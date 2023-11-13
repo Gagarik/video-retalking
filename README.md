@@ -1,9 +1,9 @@
 <div align="center">
 
-<h2>VideoReTalking <br/> <span style="font-size:12px">Audio-based Lip Synchronization for Talking Head Video Editing In the Wild</span> </h2> 
+<h2>VideoReTalking <br/> <span style="font-size:12px">Audio-based Lip Synchronization for Talking Head Video Editing in the Wild</span> </h2> 
 
-  <a href='https://arxiv.org/abs/2211.14758'><img src='https://img.shields.io/badge/ArXiv-2211.14758-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://vinthony.github.io/video-retalking/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/justinjohn0306/video-retalking/blob/main/%5BSIGGRAPH_Asia_2022%5D_VideoReTalking_Demo.ipynb)
-
+  <a href='https://arxiv.org/abs/2211.14758'><img src='https://img.shields.io/badge/ArXiv-2211.14758-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://vinthony.github.io/video-retalking/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinthony/video-retalking/blob/main/quick_demo.ipynb)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Replicate](https://replicate.com/cjwbw/video-retalking/badge)](https://replicate.com/cjwbw/video-retalking)
 
 <div>
     <a target='_blank'>Kun Cheng <sup>*,1,2</sup> </a>&emsp;
@@ -21,13 +21,20 @@
     <sup>1</sup> Xidian University &emsp; <sup>2</sup> Tencent AI Lab &emsp; <sup>3</sup> Tsinghua University
 </div>
 <br>
-<i><strong><a href='https://sa2022.siggraph.org/' target='_blank'>SIGGRAPH Asia 2022 Conferenence Track</a></strong></i>
+<i><strong><a href='https://sa2022.siggraph.org/' target='_blank'>SIGGRAPH Asia 2022 Conference Track</a></strong></i>
 <br>
 <br>
-<img src="./docs/static/images/teaser.png?raw=true" width="768px">
+<img src="https://opentalker.github.io/video-retalking/static/images/teaser.png" width="768px">
 
-<div align="justify"> We present VideoReTalking, a new system to edit the faces of a real-world talking head video according to input audio, producing a high-quality and lip-syncing output video even with a different emotion. Our system disentangles this objective into three sequential tasks: (1) face video generation with a canonical expression; (2) audio-driven lip-sync; and (3) face enhancement for improving photo-realism. Given a talking-head video, we first modify the expression of each frame according to the same expression template using the expression editing network, resulting in a video with the canonical expression. This video, together with the given audio, is then fed into the lip-sync network to generate a lip-syncing video. Finally, we improve the photo-realism of the synthesized faces through an identity-aware face enhancement network and post-processing. We use learning-based approaches for all three steps and all our modules can be tackled in a sequential pipeline without any user intervention.</div>
-<br>
+
+<div align="justify">  <BR> We present VideoReTalking, a new system to edit the faces of a real-world talking head video according to input audio, producing a high-quality and lip-syncing output video even with a different emotion. Our system disentangles this objective into three sequential tasks:
+  
+ <BR> (1) face video generation with a canonical expression
+<BR> (2) audio-driven lip-sync and 
+  <BR> (3) face enhancement for improving photo-realism. 
+  
+ <BR>  Given a talking-head video, we first modify the expression of each frame according to the same expression template using the expression editing network, resulting in a video with the canonical expression. This video, together with the given audio, is then fed into the lip-sync network to generate a lip-syncing video. Finally, we improve the photo-realism of the synthesized faces through an identity-aware face enhancement network and post-processing. We use learning-based approaches for all three steps and all our modules can be tackled in a sequential pipeline without any user intervention.</div>
+<BR>
 
 <p>
 <img alt='pipeline' src="./docs/static/images/pipeline.png?raw=true" width="768px"><br>
@@ -41,7 +48,6 @@ https://user-images.githubusercontent.com/4397546/224310754-665eb2dd-aadc-47dc-b
 
 
 
-### [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/justinjohn0306/video-retalking/blob/main/%5BSIGGRAPH_Asia_2022%5D_VideoReTalking_Demo.ipynb) [video-retalking-colab-demo](https://colab.research.google.com/github/justinjohn0306/video-retalking/blob/main/%5BSIGGRAPH_Asia_2022%5D_VideoReTalking_Demo.ipynb)
 
 ## Environment
 ```
@@ -120,5 +126,19 @@ for sharing their code.
 
 ##  Disclaimer
 
-This is not an official product of Tencent. This repository can only be used for personal/research/non-commercial purposes.
+This is not an official product of Tencent. 
 
+```
+1. Please carefully read and comply with the open-source license applicable to this code before using it. 
+2. Please carefully read and comply with the intellectual property declaration applicable to this code before using it.
+3. This open-source code runs completely offline and does not collect any personal information or other data. If you use this code to provide services to end-users and collect related data, please take necessary compliance measures according to applicable laws and regulations (such as publishing privacy policies, adopting necessary data security strategies, etc.). If the collected data involves personal information, user consent must be obtained (if applicable). Any legal liabilities arising from this are unrelated to Tencent.
+4. Without Tencent's written permission, you are not authorized to use the names or logos legally owned by Tencent, such as "Tencent." Otherwise, you may be liable for your legal responsibilities.
+5. This open-source code does not have the ability to directly provide services to end-users. If you need to use this code for further model training or demos, as part of your product to provide services to end-users, or for similar use, please comply with applicable laws and regulations for your product or service. Any legal liabilities arising from this are unrelated to Tencent.
+6. It is prohibited to use this open-source code for activities that harm the legitimate rights and interests of others (including but not limited to fraud, deception, infringement of others' portrait rights, reputation rights, etc.), or other behaviors that violate applicable laws and regulations or go against social ethics and good customs (including providing incorrect or false information, spreading pornographic, terrorist, and violent information, etc.). Otherwise, you may be liable for your legal responsibilities.
+
+```
+## All Thanks To Our Contributors 
+
+<a href="https://github.com/OpenTalker/video-retalking/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=OpenTalker/video-retalking" />
+</a>
